@@ -1,0 +1,160 @@
+* {
+    /*background: rgba(0, 0, 0, .1);*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -ms-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+    outline: 0;
+}
+
+body {
+    background: #4F94CD;
+    color: #fff;
+}
+
+.container {
+    max-width: 760px;
+    padding: 0 12px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.task-list{
+    margin: 8px 0;
+}
+.add-task input[type=text]{
+
+    width: 83%;
+    margin-right:2%;
+    float:left;
+}
+
+.add-task button{
+    width:15%;
+}
+
+.add-task button:hover {
+    background: #79CDCD;
+}
+
+input[type=text],
+button{
+    border:0;
+}
+
+button{
+    display: inline-block;
+    cursor: pointer;
+    color: #222;
+}
+
+input, 
+button,
+.task-item,
+textarea,
+.task-detail 
+{
+    padding:10px;
+    border-radius:3px;
+}
+
+.task-item.completed {
+    color: #aaa;
+    /*background: rgba(255,255,255,.7);*/
+    opacity: 0.8;
+}
+.task-item.completed:after {
+    content:"";
+    height:1px;
+    display: block;
+    width:97%;
+    background: #aaa;
+    float:right;        
+    position: relative;
+    top:-8px;
+}
+
+
+.task-item{
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 2px;
+
+}
+
+.task-item .task-content{
+    margin-left: 12px
+}
+.fr{
+
+    float:right;
+}
+
+.task-item .action{
+    color:#888;
+    font-size: 90%;
+    margin-left:3px;
+}
+
+.task-detail{
+    background: #eee;
+    color:#333;
+    width:40%;
+    height:100%;
+    position: absolute;
+    bottom:0;
+    right:0;
+    display: none;
+    overflow: auto;
+}
+
+.task-detail .content{
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    display: block;
+    background: #ddd;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+.task-detail .input-item {
+    margin-bottom: 10px;
+}
+
+.task-detail-mask{
+    position: fixed;
+    top:0;
+    bottom:10px;
+    right:0;
+    left: 0;
+    display: none;
+    padding: 10px;
+}
+
+textarea,
+input[type=text], input[type=date] {
+    width: 100%;
+    display: block;
+    background: #ddd;
+}
+
+.task-detail .datetime{
+    margin-top: 3px;
+}
